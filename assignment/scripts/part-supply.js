@@ -37,7 +37,7 @@ for (let x=0; x<supplyChanges.length; x++){
   if(supplyChanges[x]>0){console.log('Added '+ supplyChanges[x] +' parts.')}
   else if(supplyChanges[x]==0){console.log('No Change.')}
   else if(supplyChanges[x]<0){console.log('Removed '+ supplyChanges[x] +' parts.')}
-}
+};
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
@@ -75,5 +75,5 @@ while(stash>box){
   stash-=box
   boxesFilled++
 };
-console.log(boxesFilled);
+console.log('Boxes full ' + boxesFilled);
 console.log('parts left over '+ stash);
