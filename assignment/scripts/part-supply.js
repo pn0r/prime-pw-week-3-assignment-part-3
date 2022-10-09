@@ -6,11 +6,13 @@ console.log('****** Part Supply *******');
 console.log('1. Number of partsNeeded:');
 
 let partsNeeded=40;
+console.log(partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
 
 let supplyChanges=[3, 5, -6, 0, 7, 11];
+console.log(supplyChanges);
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
 
@@ -35,8 +37,8 @@ console.log('6. Showing supplyChanges...');
 
 for (let x=0; x<supplyChanges.length; x++){
   if(supplyChanges[x]>0){console.log('Added',supplyChanges[x],'parts.')}
-  else if(supplyChanges[x]==0){console.log('No Change.')}
-  else if(supplyChanges[x]<0){console.log('Removed',supplyChanges[x]*-1,'parts.')}
+  if(supplyChanges[x]==0){console.log('No Change.')}
+  if(supplyChanges[x]<0){console.log('Removed',supplyChanges[x]*-1,'parts.')}
 };
 
 // STRETCH GOALS
@@ -47,9 +49,9 @@ console.log('7. Showing supplyChanges with "for of" loop');
 for (change of supplyChanges){
   if(change>0){
     console.log('Added',change,'parts.')}
-  else if(change==0){
+  if(change==0){
     console.log('No Change.')}
-  else if(change<0){console.log('Removed',change*-1,'parts.')}
+  if(change<0){console.log('Removed',change*-1,'parts.')}
 };
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
